@@ -3,18 +3,18 @@ package Exemplos_Encapsulamentoo;
 import java.util.Scanner;
 
 public class PessoaMain {
-/*
+
 	public static void main(String[] args) {
 
 	Pessoa p1 = new Pessoa("Natalino", 39, "123.567.988-59");
 	
 	System.out.println(p1.getNome() + "\n" + p1.getCpf());
 
-	p1.setIdade(25);
+	p1.setIdade(20);
 	System.out.println(p1.getIdade());
-	*/
 	
-public static void main(String[]args) {
+	
+/*public static void main(String[]args) {
 	
 Scanner sc = new Scanner(System.in);
 
@@ -30,10 +30,9 @@ String cpf = sc.nextLine();
 Pessoa p1 = new Pessoa(nome, idade, cpf);
 
 System.out.println(p1.getNome());
-
-
+*/
 
 
 
 	}
-}
+	}
