@@ -25,7 +25,7 @@ public void listarNomes() {
 			}	
 		}
 	
-			public void removerNomes(String nome)	{
+			public void removerNome(String nome)	{
 				if(nomes.remove(nome)) {
 					System.out.println("Nome Removido.");
 				}else{
