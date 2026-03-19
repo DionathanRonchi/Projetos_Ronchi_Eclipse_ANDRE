@@ -1,4 +1,4 @@
-package Exercicios_Heranca;
+package Exercicios_Heranca_1;
 
 import java.util.Scanner;
 
