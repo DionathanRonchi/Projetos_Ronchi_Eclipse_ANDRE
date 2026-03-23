@@ -32,7 +32,8 @@ public class VeiculoMain {
 		
 	//Cadastro de Moto
 	System.out.println("===CADASTRO DE MOTO===");
-		System.out.println("Marca: ");		
+		
+	System.out.println("Marca: ");		
 		marca = sc.nextLine();
 	
 	System.out.println("Modelo: ");
