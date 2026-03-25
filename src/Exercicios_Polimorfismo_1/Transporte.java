@@ -27,17 +27,14 @@ public void setPassageiros(int passageiros) {
 }
 
 public double calcularCusto() {
-System.out.println("===CALCULAR CUSTOS===\n");
+return 0.0;
+}	
 
+//método será subrecrito pelas subclasses
+public void exibirDetalhes() {
+	System.out.println("===TRANSPORTE===");
 	System.out.println("Distancia: " + distancia);
-		System.out.println("Passageiros: " + passageiros);
+	System.out.println("Passageiros: " + passageiros);
 
-
-
-
-
-
-
-
-
-}
+		}
+	}
