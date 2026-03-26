@@ -13,12 +13,5 @@ public class AnimalMain {
 	c.dormir();
 	g.dormir();
 	
-	
-	
-	
-	
-	
-	
-	
 	}
 }
