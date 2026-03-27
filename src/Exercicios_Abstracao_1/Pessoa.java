@@ -1,5 +1,25 @@
 package Exercicios_Abstracao_1;
 
-public class Pessoa {
+public abstract class Pessoa {
 
+private String nome;
+
+public Pessoa(String nome) {
+	this.nome = nome;
 }
+
+
+public String getNome() {
+	return nome;
+}
+public void setNome(String nome) {
+	this.nome = nome;
+}
+
+public abstract void apresentar();
+
+public void saudacao() {
+System.out.println("Olá, meu nome é " + nome);
+
+		}
+	}
