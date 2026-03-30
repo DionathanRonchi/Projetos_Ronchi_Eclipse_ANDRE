@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Exemplo_3 {
 
+	private static Throwable e;
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,14 +17,15 @@ public class Exemplo_3 {
 		int n2 = sc.nextInt();
 		
 		int soma = n1 + n2;
-		
+
 		System.out.println("A soma é: " + soma);
 		
 	}catch(Exception e) {
-		System.out.println("Erro! Digite apenas números Int.");	
+		System.out.println("Erro! Digite apenas números Int" + e.getMessage());	
 	}
 		System.out.println("Programa finalizado!");
-		
+		e.printStackTrace();
+
 	}
 
 }
