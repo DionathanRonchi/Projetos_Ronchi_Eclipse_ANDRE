@@ -4,18 +4,17 @@ public class Pessoamainn {
 
 	public static void main(String[] args) {
 
-	Pessoa c  = new Aluno ("Desenvolvimento de Sistemas", null);
-	Pessoa p  = new Professor (" Sou professor de Programação Orientada a Objetos", null);
+		 Aluno a = new Aluno("Caio ","Desenvolvimento de Sistemas");
+	     Professor p = new Professor("Ana ","Programação Orientada a Objetos");       
 
-	c.saudacao();
-	c.apresentar();
+	a.saudacao();
+	a.apresentar();
+
 	
 	p.saudacao();
 	p.apresentar();
+
 	
-	
-	
-	
-	
+	  System.out.flush();
+		}
 	}
-}

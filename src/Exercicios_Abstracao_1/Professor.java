@@ -18,7 +18,7 @@ public void setDisciplina(String disciplina) {
 }
 
 @Override public void apresentar() {
-System.out.println(getNome() + "Sou Professor de " + disciplina);
+System.out.println("Sou Professora de " + disciplina);
 
 		}
 	}

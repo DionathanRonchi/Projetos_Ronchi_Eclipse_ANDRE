@@ -18,7 +18,7 @@ public void setCurso(String curso) {
 }
 
 @Override public void apresentar() {
-System.out.println(getNome() + "Sou aluno do curso de " + curso);
+System.out.println("Sou aluno do curso de " + curso);
 
 		}
 	}
