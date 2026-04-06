@@ -2,7 +2,11 @@ package Banco_dados;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PessoaDAO {
 
@@ -21,5 +25,28 @@ try(Connection conn = Conexao.conectar();
 	System.out.println("Pessoa inserida com SUCESSO");
 	
 			}
+	}
+//Read Listar todas as pessoas
+	public List<Pessoa> listar() throws  SQLException{
+
+	List<Pessoa> lista = new ArrayList<>();
+	String sql = "SELECT * FROM pessoas";
+
+	try (Connection conn = Conexao.conectar();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql)){
+	
+	while (rs.next()) {	
+		lista.add(new Pessoa(
+				rs.getInt("id"),
+				rs.getString("nome"),
+				rs.getInt("idade"),
+				rs.getString("cpf")
+				));
+
+				}
+			}
+	return lista;
 		}
 	}
+	
