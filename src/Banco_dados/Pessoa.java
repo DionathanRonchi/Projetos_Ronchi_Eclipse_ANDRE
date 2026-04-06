@@ -1,4 +1,4 @@
-package Banco_dadoss;
+package Banco_dados;
 
 public class Pessoa {
 	private int id;

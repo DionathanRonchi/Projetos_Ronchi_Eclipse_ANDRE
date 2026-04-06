@@ -1,4 +1,4 @@
-package Banco_dadoss;
+package Banco_dados;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
