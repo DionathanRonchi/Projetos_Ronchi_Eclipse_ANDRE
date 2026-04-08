@@ -12,7 +12,7 @@ public class PessoaDAO {
 
 //Create
 public void inserir(Pessoa p) throws SQLException{
-	String sql = "INSERT INTO pessoas(nome, idade) VALUES(?, ?)";
+	String sql = "INSERT INTO pessoasEX(nome, idade, cpf) VALUES(?, ?, ?)";
 
 //try com recursos
 try(Connection conn = Conexao.conectar();
@@ -20,7 +20,9 @@ try(Connection conn = Conexao.conectar();
 			
 	stmt.setString(1, p.getNome());
 	stmt.setInt(2, p.getIdade());
+	stmt.setString(3, p.getCpf());
 
+	
 	stmt.executeUpdate();
 	System.out.println("Pessoa inserida com SUCESSO");
 	
@@ -30,7 +32,7 @@ try(Connection conn = Conexao.conectar();
 	public List<Pessoa> listar() throws  SQLException{
 
 	List<Pessoa> lista = new ArrayList<>();
-	String sql = "SELECT * FROM pessoas";
+	String sql = "SELECT * FROM pessoasEX";
 
 	try (Connection conn = Conexao.conectar();
 			Statement stmt = conn.createStatement();

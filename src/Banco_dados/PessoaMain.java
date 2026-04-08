@@ -36,6 +36,7 @@ natalinoDAO.inserir(natalino);
 }catch(Exception e) {	
 	System.out.println("Erro no Banco " + e.getMessage());
 	
+	
 			}			
 		}
 	}
