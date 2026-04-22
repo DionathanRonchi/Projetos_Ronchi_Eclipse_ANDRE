@@ -36,25 +36,6 @@ public void processarPagamento() {
 @Override //SOBRESCRITA DO MÉTODO COM POLIMORFISMO (SEM 'SUPER')
 public double calcularTaxa() {
 return getValor() * 0.03; // Taxa 3%
+	
+		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
